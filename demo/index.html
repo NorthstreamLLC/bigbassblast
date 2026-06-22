@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Bass Blast Free Demo – Play Online, No Deposit</title>
+  <meta name="description" content="Play Big Bass Blast free demo instantly. No deposit, no registration. Try the Fisherman Wilds, bonus buy and free spins in our demo mode.">
+  <link rel="canonical" href="https://www.bigbassblast.com/demo">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <style>
+    :root {
+      --navy:#050d1a;--navy2:#0a1628;--navy3:#0d1e35;--blue:#0099e6;--blue2:#00c3ff;
+      --gold:#f5c518;--text:#d4e8f7;--text-dim:#7ea8c4;--white:#ffffff;
+      --glass:rgba(10,22,40,0.82);--border:rgba(0,153,230,0.18);--glow:0 0 24px rgba(0,153,230,0.35);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--navy);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--glass);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:58px;}
+    .nav-logo{font-size:1.15rem;font-weight:800;color:var(--white);text-decoration:none;}
+    .nav-logo span{color:var(--gold);}
+    .nav-links{display:flex;gap:4px;align-items:center;flex-wrap:wrap;}
+    .nav-links a{color:var(--text-dim);text-decoration:none;font-size:0.82rem;padding:5px 11px;border-radius:20px;transition:all 0.2s;white-space:nowrap;}
+    .nav-links a:hover{color:var(--white);background:rgba(0,153,230,0.15);}
+    .nav-links a.active{color:var(--white);background:rgba(0,153,230,0.2);}
+    .nav-links a.cta-btn{background:var(--gold);color:#050d1a;font-weight:700;}
+    .nav-links a.cta-btn:hover{background:var(--gold2,#ffd700);}
+
+    main{padding-top:58px;}
+
+    /* DEMO HERO */
+    .demo-hero{
+      background:radial-gradient(ellipse at 50% 0%,rgba(0,153,230,0.2) 0%,transparent 60%),var(--navy);
+      padding:36px 24px 24px;text-align:center;
+    }
+    .demo-hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:var(--white);margin-bottom:6px;}
+    .demo-hero h1 span{color:var(--gold);}
+    .demo-hero p{color:var(--text-dim);font-size:0.9rem;max-width:540px;margin:0 auto 16px;}
+
+    /* IFRAME SECTION */
+    .game-wrap{max-width:960px;margin:0 auto;padding:0 16px 32px;}
+    .game-frame{
+      background:#000;border:2px solid var(--border);border-radius:16px;
+      overflow:hidden;width:100%;aspect-ratio:16/9;position:relative;
+      box-shadow:0 0 60px rgba(0,153,230,0.2);
+    }
+    .game-frame iframe{width:100%;height:100%;border:none;display:block;}
+
+    /* BELOW GAME */
+    .below-game{max-width:960px;margin:0 auto;padding:0 16px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;}
+    .below-game .note{font-size:0.75rem;color:var(--text-dim);opacity:0.7;}
+    .btn-real{background:linear-gradient(135deg,var(--gold),#ffa500);color:#050d1a;font-weight:800;font-size:0.9rem;padding:11px 24px;border-radius:50px;text-decoration:none;display:inline-block;box-shadow:0 0 20px rgba(245,197,24,0.35);transition:transform 0.2s;}
+    .btn-real:hover{transform:translateY(-2px);}
+
+    /* INFO GRID */
+    .info-section{max-width:960px;margin:0 auto;padding:20px 16px 60px;}
+    .stat-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px;}
+    .stat-pill{background:var(--navy2);border:1px solid var(--border);border-radius:10px;padding:11px 18px;text-align:center;}
+    .stat-pill .sv{font-size:1.2rem;font-weight:900;color:var(--gold);display:block;}
+    .stat-pill .sl{font-size:0.68rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-dim);}
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+    .info-card{background:var(--navy2);border:1px solid var(--border);border-radius:14px;padding:20px;}
+    .info-card h3{font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:7px;}
+    .info-card p{font-size:0.83rem;color:var(--text-dim);margin:0;}
+
+    /* CTA */
+    .cta-bar{background:linear-gradient(135deg,var(--navy2),var(--navy3));border-top:1px solid var(--border);padding:40px 24px;text-align:center;}
+    .cta-bar h2{font-size:1.5rem;font-weight:900;color:var(--white);margin-bottom:8px;}
+    .cta-bar p{color:var(--text-dim);margin-bottom:18px;}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-weight:800;font-size:1rem;padding:14px 32px;border-radius:50px;text-decoration:none;box-shadow:var(--glow);display:inline-block;}
+    .cta-disclaimer{font-size:0.72rem;color:var(--text-dim);margin-top:10px;opacity:0.7;}
+
+    footer{background:var(--navy2);border-top:1px solid var(--border);padding:28px 24px;text-align:center;}
+    .footer-nav{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;margin-bottom:14px;}
+    .footer-nav a{color:var(--text-dim);text-decoration:none;font-size:0.82rem;}
+    .footer-nav a:hover{color:var(--blue2);}
+    .footer-disclaimer{font-size:0.72rem;color:var(--text-dim);max-width:700px;margin:0 auto 10px;line-height:1.7;opacity:0.75;}
+    .footer-copy{font-size:0.7rem;color:var(--text-dim);opacity:0.5;}
+
+    @media(max-width:640px){.nav-links{display:none;}.game-frame{aspect-ratio:4/3;}}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">Big Bass <span>Blast</span></a>
+  <div class="nav-links">
+    <a href="/demo" class="active">▶ Play Demo</a>
+    <a href="/review">Review</a>
+    <a href="/free-spins">Free Spins</a>
+    <a href="/rtp">RTP</a>
+    <a href="/bonus-buy">Bonus Buy</a>
+    <a href="/strategy">Strategy</a>
+    <a href="/casinos">Casinos</a>
+    <a href="/blog">Blog</a>
+    <a href="https://roobet.com/?ref=elite" target="_blank" rel="nofollow noopener" class="cta-btn">Play Real Money →</a>
+  </div>
+</nav>
+
+<main>
+  <div class="demo-hero">
+    <h1>Big Bass <span>Blast</span> — Free Demo</h1>
+    <p>Play instantly, no deposit or account required. Full game, full features — risk free.</p>
+  </div>
+
+  <div class="game-wrap">
+    <div class="game-frame">
+      <iframe
+        src="https://demogamesfree.pragmaticplay.net/hub-demo/openGame.do?stylename=demo_clienthub&lang=en&cur=USD&websiteUrl=https%3A%2F%2Fclienthub.pragmaticplay.com%2F&gcpif=11545&gameSymbol=vs10bbasblitz&jurisdiction=99"
+        allowfullscreen
+        allow="autoplay; fullscreen"
+        title="Big Bass Blast Free Demo">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="below-game">
+    <span class="note">🎮 Demo uses virtual credits only · 18+ to play for real money</span>
+    <a href="https://roobet.com/?ref=elite" target="_blank" rel="nofollow noopener" class="btn-real">💰 Switch to Real Money →</a>
+  </div>
+
+  <div class="info-section">
+    <div class="stat-row">
+      <div class="stat-pill"><span class="sv">96.5%</span><span class="sl">RTP</span></div>
+      <div class="stat-pill"><span class="sv">5,000×</span><span class="sl">Max Win</span></div>
+      <div class="stat-pill"><span class="sv">High</span><span class="sl">Volatility</span></div>
+      <div class="stat-pill"><span class="sv">5×3</span><span class="sl">Grid</span></div>
+      <div class="stat-pill"><span class="sv">10</span><span class="sl">Paylines</span></div>
+      <div class="stat-pill"><span class="sv">$0.10–$240</span><span class="sl">Bet Range</span></div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>What to Try First</h3>
+        <p>Use the Bonus Buy (100× bet) to jump straight into Free Spins and watch the multiplier stack up. Best way to understand the core mechanic fast.</p>
+      </div>
+      <div class="info-card">
+        <h3>Demo vs Real Money</h3>
+        <p>Same RNG, same math, same features — only difference is demo credits can't be withdrawn. Learn the game here before betting real money.</p>
+      </div>
+      <div class="info-card">
+        <h3>Ante Bet Tip</h3>
+        <p>Enable Ante Bet (+50% per spin) in demo to see the Free Spins bonus trigger more often while you're learning the game.</p>
+      </div>
+      <div class="info-card">
+        <h3>Mobile Ready</h3>
+        <p>Big Bass Blast runs on any device. The demo above works on iOS and Android — no app download needed.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-bar">
+    <h2>Ready to Play for Real?</h2>
+    <p>Chase the 5,000× max win at Roobet — fast deposits, instant play.</p>
+    <a href="https://roobet.com/?ref=elite" target="_blank" rel="nofollow noopener" class="btn-primary">Play Big Bass Blast at Roobet →</a>
+    <p class="cta-disclaimer">18+ | Gambling involves risk. Play responsibly. T&Cs apply.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <a href="/">Home</a><a href="/demo">Demo</a><a href="/review">Review</a>
+    <a href="/free-spins">Free Spins</a><a href="/rtp">RTP</a><a href="/bonus-buy">Bonus Buy</a>
+    <a href="/strategy">Strategy</a><a href="/casinos">Casinos</a><a href="/blog">Blog</a>
+  </div>
+  <p class="footer-disclaimer">BigBassBlast.com is an independent guide not affiliated with Pragmatic Play. This site contains affiliate links. 18+ only. Gamble responsibly.</p>
+  <p class="footer-copy">© 2026 BigBassBlast.com</p>
+</footer>
+</body>
+</html>

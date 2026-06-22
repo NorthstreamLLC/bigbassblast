@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/favicon.ico",
+      "headers": [{ "key": "Content-Type", "value": "image/x-icon" }]
+    },
+    {
+      "source": "/favicon.svg",
+      "headers": [{ "key": "Content-Type", "value": "image/svg+xml" }]
+    },
+    {
+      "source": "/favicon.png",
+      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+    }
+  ]
+}
