@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#050d1a"/>
+  <!-- Fish body -->
+  <ellipse cx="30" cy="32" rx="17" ry="10" fill="#f5c518"/>
+  <!-- Tail fin -->
+  <polygon points="13,32 4,22 4,42" fill="#f5c518"/>
+  <!-- Belly highlight -->
+  <ellipse cx="30" cy="35" rx="12" ry="5" fill="#ffd700" opacity="0.5"/>
+  <!-- Eye -->
+  <circle cx="41" cy="30" r="3" fill="#050d1a"/>
+  <circle cx="42" cy="29" r="1" fill="#fff"/>
+  <!-- Fin -->
+  <ellipse cx="28" cy="24" rx="8" ry="4" fill="#e6b000" transform="rotate(-20 28 24)"/>
+  <!-- Water sparkle dots -->
+  <circle cx="10" cy="20" r="1.5" fill="#0099e6" opacity="0.8"/>
+  <circle cx="55" cy="44" r="1.5" fill="#0099e6" opacity="0.8"/>
+  <circle cx="52" cy="16" r="1" fill="#00c3ff" opacity="0.6"/>
+</svg>
