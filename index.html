@@ -12,6 +12,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B7CBLWND"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P4B7CBLWND');</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"BigBassBlast.com","url":"https://www.bigbassblast.com/","description":"Big Bass Blast slot guide – free demo, review, RTP, strategy and bonus buy tips."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Big Bass Blast?","acceptedAnswer":{"@type":"Answer","text":"Big Bass Blast is a high-volatility slot by Pragmatic Play × Reel Kingdom (2026). It features a 5×3 grid, 10 paylines, Fisherman Wilds that collect Money symbols, a Bazooka Blast random feature, and a Free Spins bonus with a stacking 10× multiplier. The max win is 5,000× your bet."}},{"@type":"Question","name":"What is the RTP of Big Bass Blast?","acceptedAnswer":{"@type":"Answer","text":"The standard RTP is 96.50%. Some casinos offer lower variants at 95.50% or 94.50%, so always check the casino's RTP setting before playing."}},{"@type":"Question","name":"What is the maximum win?","acceptedAnswer":{"@type":"Answer","text":"Big Bass Blast has a max win of 5,000× your bet, achievable with multiple Fisherman Wilds during Free Spins with the 10× multiplier active."}},{"@type":"Question","name":"How do Free Spins work?","acceptedAnswer":{"@type":"Answer","text":"Land 3, 4, or 5 Scatter symbols to trigger 5, 7, or 9 Free Spins. A multiplier builds up to 10× with each Fisherman collection. Unlimited retriggers; multiplier carries over."}},{"@type":"Question","name":"What does the Bonus Buy cost?","acceptedAnswer":{"@type":"Answer","text":"The Bonus Buy costs 100× your current bet and guarantees entry into the Free Spins bonus."}},{"@type":"Question","name":"Can I play Big Bass Blast for free?","acceptedAnswer":{"@type":"Answer","text":"Yes. A free demo is available instantly — no download, no registration, no deposit required. The demo uses the same RNG and math as the real-money version."}},{"@type":"Question","name":"Is Big Bass Blast available on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes, Big Bass Blast is fully optimised for iOS and Android through any modern browser — no app download needed."}},{"@type":"Question","name":"What is the minimum bet?","acceptedAnswer":{"@type":"Answer","text":"The minimum bet is $0.10 per spin. The maximum bet is $240."}}]}</script>
   <style>
     :root {
       --navy: #020b16;
@@ -131,20 +132,13 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center; padding: 110px 24px 80px;
       position: relative; overflow: hidden;
-      background-image: url('/hero-bg.jpg');
-      background-size: cover;
-      background-position: center top;
     }
-    /* Dark overlay so text stays readable over the bright game art */
     .hero::before {
       content: '';
       position: absolute; inset: 0;
       background:
-        linear-gradient(180deg,
-          rgba(2,11,22,0.62) 0%,
-          rgba(2,11,22,0.45) 40%,
-          rgba(2,11,22,0.72) 100%),
-        radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(2,11,22,0.3) 100%);
+        radial-gradient(ellipse at 50% 30%, rgba(0,120,220,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 70%, rgba(0,60,140,0.12) 0%, transparent 50%);
       pointer-events: none;
     }
     /* Subtle shimmer over the image */
@@ -327,6 +321,51 @@
     .footer-disclaimer { font-size: 0.74rem; color: var(--text-dim); max-width: 700px; margin: 0 auto 16px; line-height: 1.75; opacity: 0.7; }
     .footer-copy { font-size: 0.7rem; color: var(--text-dim); opacity: 0.45; }
 
+    /* ── SIDEBAR LAYOUT ── */
+    .site-layout {
+      display: flex; gap: 28px; max-width: 1380px;
+      margin: 0 auto; padding: 0 24px; align-items: flex-start;
+    }
+    .main-col { flex: 1; min-width: 0; }
+    .main-col .section { max-width: 100%; padding-left: 0; padding-right: 0; }
+    .sidebar { width: 300px; flex-shrink: 0; padding-top: 40px; }
+    .sidebar-sticky {
+      position: sticky; top: 74px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .banner-slot {
+      display: block; width: 300px; border-radius: 10px;
+      overflow: hidden; border: 1px solid var(--border);
+      background: var(--navy2); transition: opacity 0.2s, border-color 0.2s;
+      text-decoration: none;
+    }
+    .banner-slot:hover { opacity: 0.88; border-color: rgba(0,153,230,0.4); }
+    .banner-slot img { width: 100%; height: auto; display: block; }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; margin-top: 32px; }
+    .faq-item {
+      background: var(--navy2); border: 1px solid var(--border); border-radius: 14px;
+      overflow: hidden; transition: border-color 0.2s;
+    }
+    .faq-item[open] { border-color: rgba(0,153,230,0.4); }
+    .faq-item summary {
+      cursor: pointer; list-style: none; padding: 18px 22px;
+      font-size: 0.97rem; font-weight: 700; color: var(--white);
+      display: flex; justify-content: space-between; align-items: center;
+      user-select: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+'; color: var(--blue2); font-size: 1.3rem; font-weight: 400;
+      transition: transform 0.2s; flex-shrink: 0; margin-left: 12px;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item summary:hover { color: var(--blue2); }
+    .faq-body { padding: 0 22px 18px; font-size: 0.9rem; color: var(--text-dim); line-height: 1.7; }
+    .faq-body a { color: var(--blue2); }
+
+    @media (max-width: 1100px) { .sidebar { display: none; } }
     @media (max-width: 640px) {
       nav { padding: 0 14px; }
       .nav-links { display: none; }
@@ -343,7 +382,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="/"><span class="fish-icon">🎣</span> Big Bass <span>Blast</span></a>
+  <a class="nav-logo" href="/"><img src="/bigbassblast-logo.png" alt="Big Bass Blast" style="height:36px;width:auto;display:block;"></a>
   <div class="nav-links">
     <a href="/demo">▶ Demo</a>
     <a href="/review">Review</a>
@@ -384,42 +423,57 @@
   </svg>
 </div>
 
-<!-- FEATURES -->
-<div class="section">
-  <h2 class="section-title">What Makes <span>Big Bass Blast</span> Special</h2>
-  <p class="section-sub">An explosive evolution of the fishing slot formula — loaded with new mechanics and massive win potential.</p>
-  <div class="features-grid">
-    <div class="feature-card">
-      <span class="feature-icon">🎣</span>
-      <h3>Fisherman Wild</h3>
-      <p>The Fisherman appears on all reels, substitutes for regular symbols, and — most importantly — collects every Money symbol on the reels the moment it lands.</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">💰</span>
-      <h3>Money Symbols</h3>
-      <p>Cash-value coins scatter across all reels. When a Fisherman lands alongside them, their values combine for an instant win. Multiple Fishermen on one spin multiply the effect.</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">💥</span>
-      <h3>Bazooka Blast</h3>
-      <p>A random base-game feature that fires extra Money symbols onto the reels. When a Fisherman also lands, the added symbols get collected — turning an ordinary spin into a big one.</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">🪝</span>
-      <h3>Hook Assist</h3>
-      <p>Randomly drags a Fisherman Wild into position on a reel. Combined with any Money symbols present, this can create surprise wins from a spin that looked like nothing.</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">⭐</span>
-      <h3>Free Spins + 10× Multiplier</h3>
-      <p>3–5 Scatters trigger 5–9 Free Spins. A multiplier builds with each collection, stacking up to 10×. Retriggers are unlimited and the multiplier carries over.</p>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">🛒</span>
-      <h3>Bonus Buy</h3>
-      <p>Skip straight to Free Spins for 100× your bet. Ante Bet (50% extra per spin) boosts Scatter frequency for players who prefer to spin their way to the bonus.</p>
+<!-- LAYOUT 1: Features + Sidebar -->
+<div class="site-layout">
+  <div class="main-col">
+    <!-- FEATURES -->
+    <div class="section">
+      <h2 class="section-title">What Makes <span>Big Bass Blast</span> Special</h2>
+      <p class="section-sub">An explosive evolution of the fishing slot formula — loaded with new mechanics and massive win potential.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🎣</span>
+          <h3>Fisherman Wild</h3>
+          <p>The Fisherman appears on all reels, substitutes for regular symbols, and — most importantly — collects every Money symbol on the reels the moment it lands.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💰</span>
+          <h3>Money Symbols</h3>
+          <p>Cash-value coins scatter across all reels. When a Fisherman lands alongside them, their values combine for an instant win. Multiple Fishermen on one spin multiply the effect.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💥</span>
+          <h3>Bazooka Blast</h3>
+          <p>A random base-game feature that fires extra Money symbols onto the reels. When a Fisherman also lands, the added symbols get collected — turning an ordinary spin into a big one.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🪝</span>
+          <h3>Hook Assist</h3>
+          <p>Randomly drags a Fisherman Wild into position on a reel. Combined with any Money symbols present, this can create surprise wins from a spin that looked like nothing.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⭐</span>
+          <h3>Free Spins + 10× Multiplier</h3>
+          <p>3–5 Scatters trigger 5–9 Free Spins. A multiplier builds with each collection, stacking up to 10×. Retriggers are unlimited and the multiplier carries over.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🛒</span>
+          <h3>Bonus Buy</h3>
+          <p>Skip straight to Free Spins for 100× your bet. Ante Bet (50% extra per spin) boosts Scatter frequency for players who prefer to spin their way to the bonus.</p>
+        </div>
+      </div>
     </div>
   </div>
+  <aside class="sidebar">
+    <div class="sidebar-sticky">
+      <a href="https://slotessentials.com" target="_blank" rel="noopener sponsored" class="banner-slot">
+        <img src="/banners/se-banner-1.png" alt="SlotEssentials – Slot Game Guides" loading="lazy" width="300" height="250">
+      </a>
+      <a href="https://slotessentials.com" target="_blank" rel="noopener sponsored" class="banner-slot">
+        <img src="/banners/se-banner-2.png" alt="SlotEssentials – Slot Game Guides" loading="lazy" width="300" height="250">
+      </a>
+    </div>
+  </aside>
 </div>
 
 <!-- STATS BAND -->
@@ -441,95 +495,160 @@
   </svg>
 </div>
 
-<!-- FREE SPINS -->
-<div class="section">
-  <h2 class="section-title"><span>Free Spins</span> Breakdown</h2>
-  <p class="section-sub">The bonus round is where the 5,000× max win lives. Here's exactly what you're playing for.</p>
-  <div class="table-wrap">
-    <table class="fs-table">
-      <thead>
-        <tr><th>Scatters</th><th>Free Spins</th><th>Multiplier</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>3 Scatters</td><td>5 Free Spins</td><td>Up to 10×</td><td>Base trigger</td></tr>
-        <tr><td>4 Scatters</td><td>7 Free Spins</td><td>Up to 10×</td><td>Better value</td></tr>
-        <tr><td>5 Scatters</td><td>9 Free Spins</td><td>Up to 10×</td><td>Best trigger</td></tr>
-        <tr><td>Retrigger (3+)</td><td>+5 Spins</td><td>Carries over</td><td>Unlimited retriggers</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="margin-top:14px;font-size:0.82rem;color:var(--text-dim);">
-    <a href="/free-spins" style="color:var(--blue2);">Full Free Spins guide with strategy tips →</a>
-  </p>
-</div>
+<!-- LAYOUT 2: Content + Sidebar -->
+<div class="site-layout">
+  <div class="main-col">
 
-<!-- EXPLORE -->
-<div class="section">
-  <h2 class="section-title">Explore the <span>Guide</span></h2>
-  <p class="section-sub">Everything you need to know about Big Bass Blast, in one place.</p>
-  <div class="page-grid">
-    <a href="/demo" class="page-card">
-      <span class="pc-icon">▶️</span>
-      <div class="pc-label">Free Play</div>
-      <h3>Play Demo</h3>
-      <p>No deposit, no registration. Full game, full features.</p>
-    </a>
-    <a href="/review" class="page-card">
-      <span class="pc-icon">📋</span>
-      <div class="pc-label">Full Review</div>
-      <h3>Slot Review</h3>
-      <p>Our in-depth verdict — 8.5/10. Pros, cons, score breakdown.</p>
-    </a>
-    <a href="/free-spins" class="page-card">
-      <span class="pc-icon">⭐</span>
-      <div class="pc-label">Bonus Guide</div>
-      <h3>Free Spins</h3>
-      <p>Multiplier system, retriggers, and how to maximise the bonus.</p>
-    </a>
-    <a href="/rtp" class="page-card">
-      <span class="pc-icon">📊</span>
-      <div class="pc-label">Math Model</div>
-      <h3>RTP & Variance</h3>
-      <p>All three RTP variants compared. Always play the best one.</p>
-    </a>
-    <a href="/bonus-buy" class="page-card">
-      <span class="pc-icon">🛒</span>
-      <div class="pc-label">Feature</div>
-      <h3>Bonus Buy</h3>
-      <p>Is the 100× Bonus Buy worth it? Full EV analysis.</p>
-    </a>
-    <a href="/how-to-play" class="page-card">
-      <span class="pc-icon">📖</span>
-      <div class="pc-label">Beginner</div>
-      <h3>How to Play</h3>
-      <p>Step-by-step guide for new players. Learn every mechanic.</p>
-    </a>
-    <a href="/strategy" class="page-card">
-      <span class="pc-icon">🧠</span>
-      <div class="pc-label">Tips</div>
-      <h3>Strategy Guide</h3>
-      <p>Bankroll management, bet sizing, and session discipline.</p>
-    </a>
-    <a href="/casinos" class="page-card">
-      <span class="pc-icon">🏆</span>
-      <div class="pc-label">Where to Play</div>
-      <h3>Best Casinos</h3>
-      <p>Top sites with 96.5% RTP, fast withdrawals, and bonuses.</p>
-    </a>
-  </div>
-</div>
+    <!-- FREE SPINS -->
+    <div class="section">
+      <h2 class="section-title"><span>Free Spins</span> Breakdown</h2>
+      <p class="section-sub">The bonus round is where the 5,000× max win lives. Here's exactly what you're playing for.</p>
+      <div class="table-wrap">
+        <table class="fs-table">
+          <thead>
+            <tr><th>Scatters</th><th>Free Spins</th><th>Multiplier</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>3 Scatters</td><td>5 Free Spins</td><td>Up to 10×</td><td>Base trigger</td></tr>
+            <tr><td>4 Scatters</td><td>7 Free Spins</td><td>Up to 10×</td><td>Better value</td></tr>
+            <tr><td>5 Scatters</td><td>9 Free Spins</td><td>Up to 10×</td><td>Best trigger</td></tr>
+            <tr><td>Retrigger (3+)</td><td>+5 Spins</td><td>Carries over</td><td>Unlimited retriggers</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px;font-size:0.82rem;color:var(--text-dim);">
+        <a href="/free-spins" style="color:var(--blue2);">Full Free Spins guide with strategy tips →</a>
+      </p>
+    </div>
 
-<!-- CTA BANNER -->
-<div class="section">
-  <div class="cta-banner">
-    <h2>Ready to Reel in the Big One?</h2>
-    <p>Play Big Bass Blast for real at Roobet — instant access, no download required.</p>
-    <a href="https://roobet.com/?ref=elite" target="_blank" rel="nofollow noopener" class="btn-primary">Play Big Bass Blast at Roobet →</a>
-    <br>
-    <a href="/demo" style="display:inline-block;margin-top:12px;color:var(--blue2);font-size:0.88rem;">Or try the free demo first ▶</a>
-    <p class="cta-disclaimer">18+ | Gambling can be addictive. Play responsibly. T&Cs apply.</p>
-  </div>
-</div>
+    <!-- EXPLORE -->
+    <div class="section">
+      <h2 class="section-title">Explore the <span>Guide</span></h2>
+      <p class="section-sub">Everything you need to know about Big Bass Blast, in one place.</p>
+      <div class="page-grid">
+        <a href="/demo" class="page-card">
+          <span class="pc-icon">▶️</span>
+          <div class="pc-label">Free Play</div>
+          <h3>Play Demo</h3>
+          <p>No deposit, no registration. Full game, full features.</p>
+        </a>
+        <a href="/review" class="page-card">
+          <span class="pc-icon">📋</span>
+          <div class="pc-label">Full Review</div>
+          <h3>Slot Review</h3>
+          <p>Our in-depth verdict — 8.5/10. Pros, cons, score breakdown.</p>
+        </a>
+        <a href="/free-spins" class="page-card">
+          <span class="pc-icon">⭐</span>
+          <div class="pc-label">Bonus Guide</div>
+          <h3>Free Spins</h3>
+          <p>Multiplier system, retriggers, and how to maximise the bonus.</p>
+        </a>
+        <a href="/rtp" class="page-card">
+          <span class="pc-icon">📊</span>
+          <div class="pc-label">Math Model</div>
+          <h3>RTP & Variance</h3>
+          <p>All three RTP variants compared. Always play the best one.</p>
+        </a>
+        <a href="/bonus-buy" class="page-card">
+          <span class="pc-icon">🛒</span>
+          <div class="pc-label">Feature</div>
+          <h3>Bonus Buy</h3>
+          <p>Is the 100× Bonus Buy worth it? Full EV analysis.</p>
+        </a>
+        <a href="/how-to-play" class="page-card">
+          <span class="pc-icon">📖</span>
+          <div class="pc-label">Beginner</div>
+          <h3>How to Play</h3>
+          <p>Step-by-step guide for new players. Learn every mechanic.</p>
+        </a>
+        <a href="/strategy" class="page-card">
+          <span class="pc-icon">🧠</span>
+          <div class="pc-label">Tips</div>
+          <h3>Strategy Guide</h3>
+          <p>Bankroll management, bet sizing, and session discipline.</p>
+        </a>
+        <a href="/casinos" class="page-card">
+          <span class="pc-icon">🏆</span>
+          <div class="pc-label">Where to Play</div>
+          <h3>Best Casinos</h3>
+          <p>Top sites with 96.5% RTP, fast withdrawals, and bonuses.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section">
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <p class="section-sub">Everything players ask about Big Bass Blast — answered.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is Big Bass Blast?</summary>
+          <div class="faq-body"><p>Big Bass Blast is a high-volatility slot by Pragmatic Play × Reel Kingdom (2026). It features a 5×3 grid, 10 paylines, Fisherman Wilds that collect Money symbols, a Bazooka Blast random feature, and a Free Spins bonus with a stacking 10× multiplier. The max win is 5,000× your bet.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the RTP of Big Bass Blast?</summary>
+          <div class="faq-body"><p>The standard RTP is 96.50%. Some casinos offer lower variants at 95.50% or 94.50%, so always check the casino's RTP setting before playing. Our <a href="/rtp">RTP guide</a> explains how to identify which version you're on.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the maximum win?</summary>
+          <div class="faq-body"><p>Big Bass Blast has a max win of 5,000× your bet. To achieve this, you need multiple Fisherman Wilds landing during Free Spins with the 10× multiplier active and high-value Money symbols on the reels.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do Free Spins work?</summary>
+          <div class="faq-body"><p>Land 3, 4, or 5 Scatter symbols to trigger 5, 7, or 9 Free Spins respectively. During the bonus, a multiplier builds each time a Fisherman collects Money symbols — up to 10×. You can retrigger Free Spins unlimited times and the multiplier carries over between retriggers.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What does the Bonus Buy cost?</summary>
+          <div class="faq-body"><p>The Bonus Buy costs 100× your current bet and guarantees entry into the Free Spins bonus. Ante Bet is a cheaper alternative — add 50% per spin to increase Scatter frequency. See our <a href="/bonus-buy">Bonus Buy analysis</a> for the full EV breakdown.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I play Big Bass Blast for free?</summary>
+          <div class="faq-body"><p>Yes. Our <a href="/demo">free demo</a> loads instantly — no download, no registration, no deposit required. The demo uses the same RNG and math as the real-money version, so it's the best way to learn the game before betting for real.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is Big Bass Blast available on mobile?</summary>
+          <div class="faq-body"><p>Yes, Big Bass Blast is fully optimised for mobile. It runs on iOS and Android through any modern browser — no app download needed. The demo on this site works on mobile too.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the Bazooka Blast feature?</summary>
+          <div class="faq-body"><p>Bazooka Blast is a random base-game feature that fires additional Money symbols onto the reels mid-spin. If a Fisherman Wild also lands, those extra Money symbols get collected — turning what looked like a blank spin into a potentially large payout.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How does Big Bass Blast compare to Big Bass Bonanza?</summary>
+          <div class="faq-body"><p>Big Bass Blast has a lower RTP (96.50% vs 96.71%) but a significantly higher max win (5,000× vs 2,100×) and adds new mechanics like Bazooka Blast and Hook Assist. If you want higher upside, Blast is the better pick. See our full <a href="/big-bass-bonanza">Big Bass Bonanza comparison</a>.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the minimum bet?</summary>
+          <div class="faq-body"><p>The minimum bet is $0.10 per spin. The maximum bet is $240. Ante Bet adds 50% to your stake per spin; Bonus Buy costs 100× your bet.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <!-- CTA BANNER -->
+    <div class="section">
+      <div class="cta-banner">
+        <h2>Ready to Reel in the Big One?</h2>
+        <p>Play Big Bass Blast for real at Roobet — instant access, no download required.</p>
+        <a href="https://roobet.com/?ref=elite" target="_blank" rel="nofollow noopener" class="btn-primary">Play Big Bass Blast at Roobet →</a>
+        <br>
+        <a href="/demo" style="display:inline-block;margin-top:12px;color:var(--blue2);font-size:0.88rem;">Or try the free demo first ▶</a>
+        <p class="cta-disclaimer">18+ | Gambling can be addictive. Play responsibly. T&Cs apply.</p>
+      </div>
+    </div>
+
+  </div><!-- /.main-col -->
+  <aside class="sidebar">
+    <div class="sidebar-sticky">
+      <a href="https://slotessentials.com" target="_blank" rel="noopener sponsored" class="banner-slot">
+        <img src="/banners/se-banner-3.png" alt="SlotEssentials – Slot Game Guides" loading="lazy" width="300" height="250">
+      </a>
+      <a href="https://slotessentials.com" target="_blank" rel="noopener sponsored" class="banner-slot">
+        <img src="/banners/se-banner-4.png" alt="SlotEssentials – Slot Game Guides" loading="lazy" width="300" height="250">
+      </a>
+    </div>
+  </aside>
+</div><!-- /.site-layout -->
 
 <!-- FOOTER -->
 <footer>
