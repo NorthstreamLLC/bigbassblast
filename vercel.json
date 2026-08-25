@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/blog/big-bass-blast-vs-bonanza",
+      "destination": "/big-bass-bonanza",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/favicon.ico",
