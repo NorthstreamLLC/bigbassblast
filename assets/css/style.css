@@ -358,6 +358,7 @@ table.data-table { min-width: 480px; }
 .callout-info .icon { color: var(--accent); }
 .callout-warning { background: var(--warning-tint); border-left: 3px solid var(--warning); }
 .callout-warning .icon { color: var(--warning); }
+.info-box { background: var(--accent-tint); border: 1px solid transparent; border-left: 3px solid var(--accent); border-radius: var(--radius-md); color: var(--text); margin: var(--sp-4) 0; padding: var(--sp-4) var(--sp-5, 20px); }
 
 /* ---- FAQ / Accordion --------------------------------------------------------------- */
 .faq-list { display: flex; flex-direction: column; gap: var(--sp-2); margin-top: var(--sp-6); }
